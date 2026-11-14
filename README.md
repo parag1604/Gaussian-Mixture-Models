@@ -17,10 +17,6 @@ Use python >= 3.10 and install the requirements (numpy, scipy and matplotlib):
 pip install -r requirements.txt
 ```
 
-## Data
-
-No dataset is needed. `utils.py` samples 400 points from two crossing 2-D Gaussians: both are centred near (2, 2.5), one is stretched along y = x and the other along y = -x.
-
 ## Running
 
 The EM algorithm lives in `GaussianMM.py`. Each script below adds one new idea.
@@ -31,7 +27,7 @@ The EM algorithm lives in `GaussianMM.py`. Each script below adds one new idea.
 python version0.py
 ```
 
-K-means separates clusters with straight lines and ignores their shape, so on this data it is barely better than chance (about 53% with the default seed). Saves `data_vis.jpg` and `kmeans_vis.jpg`:
+`utils.py` samples 400 points from two crossing 2-D Gaussians: both are centred near (2, 2.5), one is stretched along y = x and the other along y = -x. K-means separates clusters with straight lines and ignores their shape, so on this data it is barely better than chance (about 53% with the default seed). Saves `data_vis.jpg` and `kmeans_vis.jpg`:
 
 Ground truth             |  K-means
 :-------------------------:|:-------------------------:
